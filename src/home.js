@@ -1,4 +1,7 @@
 export function createHome() {
+    const content = document.querySelector('#content');
+    content.replaceChildren();
+
     const home = document.createElement('div');
     const heading = document.createElement('h1');
     const slogan = document.createElement('h3');
@@ -13,6 +16,5 @@ export function createHome() {
     home.appendChild(slogan);
     home.appendChild(caption);
 
-    const body = document.querySelector('body');
-    body.appendChild(home);
+    content.appendChild(home);
 }
