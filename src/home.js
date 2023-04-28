@@ -13,6 +13,6 @@ export function createHome() {
     home.appendChild(slogan);
     home.appendChild(caption);
 
-    const content = document.querySelector('#content');
-    content.appendChild(home);
+    const body = document.querySelector('body');
+    body.appendChild(home);
 }
