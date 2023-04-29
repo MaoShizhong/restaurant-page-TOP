@@ -1,3 +1,5 @@
+import svg from '../assets/methods.svg';
+
 export function generateMenu() {
     const content = document.querySelector('#content');
     content.replaceChildren();
@@ -44,13 +46,11 @@ function createMethodDiv() {
     div.setAttribute('id', 'method');
 
     const heading = document.createElement('h1');
-    const image = new Image();
     const methods = document.createElement('div');
     const methodsArr = ['Aeropress', 'Pour-over', 'French press'];
     const price = document.createElement('h2');
 
     heading.textContent = 'Choose a classic brewing method';
-    image.src = '../assets/methods.svg';
     methodsArr.forEach(method => {
         const p = document.createElement('p');
         p.textContent = method;
@@ -59,7 +59,7 @@ function createMethodDiv() {
     price.textContent = 'Mug (200ml) - £2.99';
     
     div.appendChild(heading);
-    div.appendChild(image);
+    div.innerHTML += svg;
     div.appendChild(methods);
     div.appendChild(price);
 
