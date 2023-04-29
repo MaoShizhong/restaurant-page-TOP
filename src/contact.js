@@ -72,7 +72,8 @@ function createForm() {
         'required': true,
     });
     btn.setAttribute('type', 'submit');
-    btn.textContent = 'Send';
+    btn.textContent = 'Fake send';
+    btn.addEventListener('click', e => e.preventDefault());
 
     const formEls = [name, email, message, btn];
     formEls.forEach(el => form.appendChild(el));
