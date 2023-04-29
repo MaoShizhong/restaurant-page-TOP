@@ -5,13 +5,36 @@ export function generateContact() {
     const contact = document.createElement('div');
     contact.setAttribute('id', 'contact');
 
-    // const address = createAddressDiv();
+    const address = createAddressDiv();
     const form = createForm();
 
-    // contact.appendChild(address);
+    contact.appendChild(address);
     contact.appendChild(form);
 
     content.appendChild(contact);
+}
+
+function createAddressDiv() {
+    const div = document.createElement('div');
+    div.setAttribute('id', 'address');
+
+    const addressLines = [
+        '<b>Find us at:</b>',
+        '64 Zoo Lane',
+        'Zoocester',
+        'Animalshire',
+        'CH33 7AH',
+        'Tel: 02864 646464',
+        '<b>Open:</b><br>Mon-Sun / 07:00-19:30',
+    ];
+
+    addressLines.forEach(line => {
+        const p = document.createElement('p');
+        p.innerHTML = line;
+        div.appendChild(p);
+    });
+
+    return div;
 }
 
 function createForm() {
