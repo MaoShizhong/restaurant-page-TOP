@@ -85,6 +85,7 @@ function createEspressoDiv() {
     const grid = createGrid(gridContents, true);
 
     div.appendChild(heading);
+    div.appendChild(price);
     div.appendChild(grid);
 
     return div;
