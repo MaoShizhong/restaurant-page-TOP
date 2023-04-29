@@ -2,17 +2,22 @@
   "name": "restaurant-page-top",
   "version": "1.0.0",
   "description": "Okay, this is a café not a restaurant...",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "build": "webpack",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "svg-inline-loader": "^0.8.2",
     "webpack": "^5.81.0",
-    "webpack-cli": "^5.0.2"
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
   }
 }
