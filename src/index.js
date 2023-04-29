@@ -1,4 +1,5 @@
-import { createHome } from "./home.js";
+import { generateHome } from "./home.js";
+import { generateContact } from "./contact.js";
 
 console.log("This is working!");
 
@@ -8,7 +9,7 @@ tabs.forEach(tab => tab.addEventListener('click', generateContent));
 function generateContent(e) {
     switch (e.target.value) {
         case 'home':
-            createHome();
+            generateHome();
             break;
         case 'menu':
             generateMenu();
@@ -20,4 +21,4 @@ function generateContent(e) {
 }
 
 // initialise
-// createHome();
+generateHome();
