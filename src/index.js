@@ -1,5 +1,6 @@
 import { generateHome } from "./home.js";
 import { generateContact } from "./contact.js";
+import { generateMenu } from "./menu.js";
 
 console.log("This is working!");
 
@@ -21,4 +22,4 @@ function generateContent(e) {
 }
 
 // initialise
-generateHome();
+// generateHome();
