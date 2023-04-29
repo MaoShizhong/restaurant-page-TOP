@@ -2,6 +2,7 @@ import { generateHome } from "./home.js";
 import { generateContact } from "./contact.js";
 import { generateMenu } from "./menu.js";
 import './style.css';
+import './bgimage.jpg';
 
 console.log("This is working!");
 

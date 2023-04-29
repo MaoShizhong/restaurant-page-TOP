@@ -7,7 +7,7 @@
 body {
     background-attachment: fixed;
     background-color: transparent;
-    background-image: url('../assets/bgimage.jpg');
+    background-image: url('./bgimage.jpg');
     background-size: cover;
     backdrop-filter: brightness(50%);
     color: white;

@@ -1,4 +1,4 @@
-import svg from '../assets/methods.svg';
+import svg from './methods.svg';
 
 export function generateMenu() {
     const content = document.querySelector('#content');
