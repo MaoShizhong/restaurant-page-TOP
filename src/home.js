@@ -1,7 +1,8 @@
-export function createHome() {
+export function generateHome() {
     const content = document.querySelector('#content');
     content.replaceChildren();
 
+    const fragment = document.createDocumentFragment();
     const home = document.createElement('div');
     const heading = document.createElement('h1');
     const slogan = document.createElement('h3');
@@ -15,6 +16,7 @@ export function createHome() {
     home.appendChild(heading);
     home.appendChild(slogan);
     home.appendChild(caption);
+    fragment.appendChild(home);
 
-    content.appendChild(home);
+    content.appendChild(fragment);
 }
