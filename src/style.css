@@ -42,19 +42,23 @@ ul {
     padding: 0;
 }
 
-#content {
-    &>* {
-        min-height: var(--scrollable);
-        overflow: auto;
-        scrollbar-width: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+#content>div {
+    min-height: var(--scrollable);
+    overflow: auto;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in 1;
 
-        &::-webkit-scrollbar {
-            width: 0;
-        }
+    &::-webkit-scrollbar {
+        width: 0;
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% {opacity: 1; }
 }
 
 #home {
@@ -111,7 +115,7 @@ ul {
         font-size: 1.4rem;
         display: flex;
         justify-content: center;
-        gap: 35px;
+        gap: 114px;
     }
 
     &>#espresso {
@@ -206,4 +210,8 @@ button {
 ::placeholder {
     color: #4b4b4b;
     opacity: 1;
+}
+
+.invisible {
+    visibility: hidden;
 }
