@@ -22,4 +22,4 @@ function generateContent(e) {
 }
 
 // initialise
-// generateHome();
+generateHome();
