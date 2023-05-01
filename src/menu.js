@@ -71,7 +71,7 @@ function createEspressoDiv() {
         'Americano': 'Hot water poured over a shot of espresso.',
         'Flat White': 'Espresso, steamed milk with a delicate layer of frothy milk to top.',
         'Caffè Latte': 'A shot of espresso, steamed milk and a fine layer of foamed milk on top, though more than a flat white.',
-        'Cappucino': 'Related to the Latte but with equal parts steamed milk and foamed milk - show off your foamstache!',
+        'Cappuccino': 'Related to the latte but with equal parts steamed milk and foamed milk - show off your foamstache!',
         'Mocha': 'A shot of espresso mixed with chocolate syrup, steamed milk then topped with foamed milk and cocoa powder.',
     };
 
